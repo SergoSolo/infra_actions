@@ -41,6 +41,8 @@ jobs:
     steps: 
     - name: build docker image
       run: |
+        ls
+        ls ../
         cd ../
         docker build .
   # build_and_push_to_docker_hub:
