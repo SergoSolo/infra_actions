@@ -40,9 +40,8 @@ jobs:
     needs: tests
     steps: 
     - name: build docker image
+    - uses: actions/checkout@v2
       run: |
-        ls
-        ls ../
         cd ../
         docker build .
   # build_and_push_to_docker_hub:
